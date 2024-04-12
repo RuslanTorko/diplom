@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>AutoSpares - Магазин</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://kit.fontawesome.com/69061d5a94.js?_v=20240412142156" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240412142156">
+	<link rel="shortcut icon" href="img/logo.png">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture><span>AutoSpares</span></a>
+				<select name="form[]" data-class-modif="form" class="header__categories">
+					<option value="1" selected>Всі категорії</option>
+					<option value="2">Пункт №2</option>
+					<option value="3">Пункт №3</option>
+					<option value="4">Пункт №4</option>
+				</select>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link">Магазин</a></li>
+							<li class="menu__item">
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Каталог</option>
+									<option value="2">Каталог №2</option>
+									<option value="3">Каталог №3</option>
+									<option value="4">Каталог №4</option>
+								</select>
+							</li>
+							<li class="menu__item"><a href="contact.html" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__buttons">
+					<div class="header__icon-btns">
+						<div class="header__search"><i class="fa-solid fa-magnifying-glass"></i></div>
+						<div class="header__like"><i class="fa-regular fa-heart"></i></div>
+						<div class="header__busket"><i class="fa-solid fa-cart-shopping"></i></div>
+					</div>
+					<button type="button" class="header__button header__button_login main-button">Увійти</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="bread-crumbs">
+				<div class="bread-crumbs__container">
+					<p class="bread-crumbs__text">
+						<i class="fa-solid fa-house"></i>
+						<a class="bread-crumbs__link" href="/index.html">Головна</a>><span class="bread-crumbs__span">Товари</span>
+					</p>
+				</div>
+			</div>
+			<div class="catalog">
+				<div class="catalog__container">
+					<aside class="catalog__side-menu">
+						<section class="side-menu__section side-menu__availability">
+							<h2 class="side-menu__section-title">Статус товару:</h2>
+							<label for="in-stock">
+								<input type="checkbox" name="in-stock" id="in-stock" class="side-menu__check">В наявності
+							</label>
+							<label for="not-avlb">
+								<input type="checkbox" name="not-avlb" id="not-avlb" class="side-menu__check">Немає в наявності
+							</label>
+						</section>
+						<section class="side-menu__section side-menu__brand">
+							<h2 class="side-menu__section-title">Бренд:</h2>
+							<label for="brand-amio">
+								<input type="checkbox" name="brand-amio" id="brand-amio" class="side-menu__check">Amio
+							</label>
+							<label for="brand-mercury">
+								<input type="checkbox" name="brand-mercury" id="brand-mercury" class="side-menu__check">Mercury
+							</label>
+							<label for="brand-westa">
+								<input type="checkbox" name="brand-westa" id="brand-westa" class="side-menu__check">Westa
+							</label>
+							<label for="brand-4max">
+								<input type="checkbox" name="brand-4max" id="brand-4max" class="side-menu__check">4MAX
+							</label>
+							<label for="brand-berga">
+								<input type="checkbox" name="brand-berga" id="brand-berga" class="side-menu__check">BERGA
+							</label>
+							<label for="brand-clean">
+								<input type="checkbox" name="brand-clean" id="brand-clean" class="side-menu__check">Clean
+							</label>
+							<label for="brand-daewoo">
+								<input type="checkbox" name="brand-daewoo" id="brand-daewoo" class="side-menu__check">Daewoo
+							</label>
+							<label for="brand-electric">
+								<input type="checkbox" name="brand-electric" id="brand-electric" class="side-menu__check">Electric
+							</label>
+							<label for="brand-febi">
+								<input type="checkbox" name="brand-febi" id="brand-febi" class="side-menu__check">Febi
+							</label>
+							<label for="brand-hagen">
+								<input type="checkbox" name="brand-hagen" id="brand-hagen" class="side-menu__check">Hagen
+							</label>
+							<label for="brand-iveco">
+								<input type="checkbox" name="brand-iveco" id="brand-iveco" class="side-menu__check">Iveco
+							</label>
+							<label for="brand-klifex">
+								<input type="checkbox" name="brand-klifex" id="brand-klifex" class="side-menu__check">Klifex
+							</label>
+							<label for="brand-mapo">
+								<input type="checkbox" name="brand-mapo" id="brand-mapo" class="side-menu__check">MAPO
+							</label>
+						</section>
+						<section class="side-menu__section side-menu__delivery">
+							<h2 class="side-menu__section-title">Доставка:</h2>
+							<label for="delivery-fast">
+								<input type="checkbox" name="delivery-fast" id="delivery-fast" class="side-menu__check">Швидка доставка
+							</label>
+							<label for="delivery-eur">
+								<input type="checkbox" name="delivery-eur" id="delivery-eur" class="side-menu__check">Доставка з ЄС
+							</label>
+							<label for="delivery-free">
+								<input type="checkbox" name="delivery-free" id="delivery-free" class="side-menu__check">Безкоштовна доставка
+							</label>
+						</section>
+						<section class="side-menu__section side-menu__categories">
+							<h2 class="side-menu__section-title">Категорія товару:</h2>
+							<label for="category-1">
+								<input type="checkbox" name="category-1" id="category-1" class="side-menu__check">Автофільтри
+							</label>
+							<label for="category-2">
+								<input type="checkbox" name="category-2" id="category-2" class="side-menu__check">Гальмівна система
+							</label>
+							<label for="category-3">
+								<input type="checkbox" name="category-3" id="category-3" class="side-menu__check">Система кондиціювання
+							</label>
+							<label for="category-4">
+								<input type="checkbox" name="category-4" id="category-4" class="side-menu__check">Система запалювання
+							</label>
+							<label for="category-5">
+								<input type="checkbox" name="category-5" id="category-5" class="side-menu__check">Кузов автомобіля
+							</label>
+							<label for="category-6">
+								<input type="checkbox" name="category-6" id="category-6" class="side-menu__check">Автомобільні кріплення
+							</label>
+						</section>
+					</aside>
+					<article class="catalog__items">
+						<div class="catalog__card card">
+							<div class="card__picture">
+								<img src="img/home page/news/01.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__content">
+								<h3 class="card__name">Шина Tigar Winter</h3>
+								<p class="card__description">Автомобільні шини Tigar Winter серія для легкових автомобілів.</p>
+							</div>
+							<div class="card__row">
+								<div class="card__rate">
+									<div class="card__stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									(<span class="card__rates-count">23</span>) Відгуків
+								</div>
+								<p class="card__price">3049 грн</p>
+							</div>
+						</div>
+						<div class="catalog__card card">
+							<div class="card__picture">
+								<img src="img/home page/news/01.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__content">
+								<h3 class="card__name">Шина Tigar Winter</h3>
+								<p class="card__description">Автомобільні шини Tigar Winter серія для легкових автомобілів.</p>
+							</div>
+							<div class="card__row">
+								<div class="card__rate">
+									<div class="card__stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									(<span class="card__rates-count">23</span>) Відгуків
+								</div>
+								<p class="card__price">3049 грн</p>
+							</div>
+						</div>
+						<div class="catalog__card card">
+							<div class="card__picture">
+								<img src="img/home page/news/01.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__content">
+								<h3 class="card__name">Шина Tigar Winter</h3>
+								<p class="card__description">Автомобільні шини Tigar Winter серія для легкових автомобілів.</p>
+							</div>
+							<div class="card__row">
+								<div class="card__rate">
+									<div class="card__stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									(<span class="card__rates-count">23</span>) Відгуків
+								</div>
+								<p class="card__price">3049 грн</p>
+							</div>
+						</div>
+						<div class="catalog__card card">
+							<div class="card__picture">
+								<img src="img/home page/news/01.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__content">
+								<h3 class="card__name">Шина Tigar Winter</h3>
+								<p class="card__description">Автомобільні шини Tigar Winter серія для легкових автомобілів.</p>
+							</div>
+							<div class="card__row">
+								<div class="card__rate">
+									<div class="card__stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									(<span class="card__rates-count">23</span>) Відгуків
+								</div>
+								<p class="card__price">3049 грн</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer_columns">
+					<div class="footer__column">
+						<a href="" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture><span>AutoSpares</span></a>
+						<h5 class="footer__title"><i class="fa-solid fa-location-dot"></i> Наше розташування:</h5>
+						<ul class="footer__location-list">
+							<li class="footer__loc-item">01. вул.Незалежності 112, Київ</li>
+							<li class="footer__loc-item">02. вул.Солотвинська 1, Львів</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__colunm-title">Популярні категорії</h4>
+						<nav class="footer__navigation-items">
+							<a href="#" class="footer__nav-link">Гальмівна система</a>
+							<a href="#" class="footer__nav-link">Автохімія</a>
+							<a href="#" class="footer__nav-link">Кузов і складові</a>
+							<a href="#" class="footer__nav-link">Моторна олива</a>
+							<a href="#" class="footer__nav-link">Амортизатори</a>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__colunm-title">Важливі посилання</h4>
+						<nav class="footer__navigation-items">
+							<a href="#" class="footer__nav-link">Про Нас</a>
+							<a href="#" class="footer__nav-link">Контакти</a>
+							<a href="#" class="footer__nav-link">Часті запитання</a>
+							<a href="#" class="footer__nav-link">Останні новини</a>
+							<a href="#" class="footer__nav-link">Відстежити замовлення</a>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__colunm-title">Отримуйте останні новини!</h4>
+						<p class="footer__paragraph">Введіть свою електронну адресу, щоб отримувати останні оновлення про наші продукти.</p>
+						<form action="#" class="footer__form" id="footer-form">
+							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Електронна адреса" class="footer__input">
+							<button type="submit" class="footer__button">Підписатися</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom bottom__container">
+					<p class="footer__copy">© 2023 AutoSpares. Всі права захищено.</p>
+					<ul class="footer__partners-list">
+						<li class="footer__partner"><img src="img/icons/Paypal.svg" alt=""></li>
+						<li class="footer__partner"><img src="img/icons/Visa.svg" alt=""></li>
+						<li class="footer__partner"><img src="img/icons/Master Card.svg" alt=""></li>
+						<li class="footer__partner"><img src="img/icons/American Express.svg" alt=""></li>
+						<li class="footer__partner"><img src="img/icons/Discover.svg" alt=""></li>
+					</ul>
+					<div class="footer__social-menu">
+						<h6 class="footer__social-title">Наші соцмережі:</h6>
+						<nav class="footer__social-items">
+							<a href="#" class="footer__social-item"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#" class="footer__social-item"><i class="fa-brands fa-square-facebook"></i></a>
+							<a href="#" class="footer__social-item"><i class="fa-brands fa-youtube"></i></a>
+							<a href="#" class="footer__social-item"><i class="fa-brands fa-linkedin"></i></a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240412142156"></script>
+</body>
+
+</html>
